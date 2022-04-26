@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  margin-top: calc(50vh - (518px / 2));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,6 @@ body {
 .time-block {
   width:255px;
   height: 245px;
-  background-color: orangered;
   border-radius: 15px;
 }
 
@@ -180,4 +180,97 @@ body {
   font-weight: 300;
   margin: 12px 0 0 30px;
   letter-spacing: 0.3px;
+}
+
+@media (max-width:375px) {
+  .wrapper {
+    flex-wrap: wrap;
+    width:350px;
+    padding: 40px 12px 0 10px;
+  }
+
+  .info-block {
+    width:350px;
+    margin: 0;
+    height: 200px;
+  }
+
+  .info-block__top {
+    height: 134px;
+  }
+
+  .info-block__top--photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-block__top--text {
+    position: absolute;
+    top: 52px;
+    left: 102px;
+  }
+
+  .info-block__top--name {
+    position: absolute;
+    top: 109px;
+    left: 102px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .info-block__bottom {
+    height: 100px;
+    flex-direction: row;
+    margin: 0;
+    margin-top: -6px;
+  }
+
+  .info-block__btn:nth-child(2n) {
+    padding-left: 55px;
+  }
+
+  .info-block__btn:nth-child(3n) {
+    padding-left: 42px;
+  }
+
+  .time-area {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .time-block:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .time-block:nth-child(-n+3) {
+    margin-bottom: 24px;
+  }
+
+  .time-block {
+    width:100%;
+    margin: 0;
+    margin-bottom: 24px;
+    height: 160px;
+  }
+
+  .time-block__timezone {
+    height: 122px;
+    margin-top: 38px;
+  }
+
+  .timezone__header {
+    margin: 28px 0 0 26px;
+  }
+
+  .timezone__current-hours {
+    font-size: 32px;
+    margin: 5px 0 0 26px;
+  }
+
+  .timezone__prev-hours {
+    position: absolute;
+    top: 54px;
+    right: 24px;
+  }
+
 }
