@@ -40,7 +40,7 @@ body {
 }
 
 .time-block:nth-child(-n+3) {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .info-block__top {
@@ -65,7 +65,7 @@ body {
 
 .info-block__top--name {
   display: block;
-  color: hsl(236, 100%, 87%);
+  color: #fff;
   margin: 3px 0 0 32px;
   font-size: 40px;
   font-weight: 300;
@@ -89,6 +89,89 @@ body {
   cursor: pointer;
 }
 
-.info-block__btn:active {
+.info-block__btn:hover {
+  color: #fff;
+}
+
+/* Rigth block */
+
+.time-block {
+  position: relative;
+}
+
+.time-block__img {
+  position: absolute;
+  top: 0;
+  right:20px;
+  z-index: 1;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.time-block__timezone {
+  position: relative;
+  height: 200px;
+  margin-top: 45px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 13px;
+  z-index: 2;
+}
+
+.time-block__timezone:hover {
+  background-color: hsl(235, 45%, 31%);
+}
+
+.timezone__svg {
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.timezone__header {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 29px 0 0 30px;
+}
+
+.timezone__current-hours {
+  display: block;
+  color: #fff;
+  font-size: 52px;
+  font-weight: 300;
+  margin: 25px 0 0 32px;
+  letter-spacing: 0.98px;
+}
+
+.timezone__prev-hours {
+  display: block;
   color: hsl(236, 100%, 87%);
+  font-size: 15px;
+  font-weight: 300;
+  margin: 12px 0 0 30px;
+  letter-spacing: 0.3px;
 }
